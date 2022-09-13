@@ -1,0 +1,10 @@
+<ac-layer acFor="let ufo of ufos$" [context]="this">
+  <ac-model-desc props="{
+    id : ufo[0].id,
+    minimumPixelSize: 30,
+    position: interpolatePosition(ufo),
+    scale : 1000,
+    uri: ufo[0].uri
+  }">
+</ac-model-desc>
+</ac-layer>

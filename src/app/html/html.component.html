@@ -1,0 +1,9 @@
+<ac-layer acFor="let html of htmls$" [context]="this">
+  <ac-html-desc props="{position: html.position, show: html.show}">
+    <ng-template let-html>
+      <div class="contianer">
+        <div>{{html.name}}</div>
+      </div>
+    </ng-template>
+  </ac-html-desc>
+</ac-layer>
